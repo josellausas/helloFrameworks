@@ -5,7 +5,15 @@
 class ofApp : public ofBaseApp
 {
     private:
-        ofImage testImage;
+        ofImage testJPGImage;
+        int img01x, img01y;
+    
+        ofImage testPNGImage;
+        int img02x, img02y;
+    
+    
+        ofImage* pSelectedImage;
+    
     
     
 	public:
