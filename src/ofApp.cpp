@@ -3,9 +3,9 @@
 //--------------------------------------------------------------
 void ofApp::setup()
 {
-    
     setupImages();
     setupShaders();
+    setupWebcam();
 }
 
 void ofApp::setupImages()
@@ -43,10 +43,16 @@ void ofApp::setupShaders()
     
 }
 
+void ofApp::setupWebcam()
+{
+    // Sets up the webcam
+    webcam.initGrabber(320,240);
+}
+
 //--------------------------------------------------------------
 void ofApp::update()
 {
-
+    webcam.update();
 }
 
 //--------------------------------------------------------------
@@ -55,6 +61,12 @@ void ofApp::draw()
 
     drawShaders();
     drawImages();
+    drawWebcam();
+}
+
+void ofApp::drawWebcam()
+{
+    webcam.draw(0, 0);
 }
 
 void ofApp::drawImages()
