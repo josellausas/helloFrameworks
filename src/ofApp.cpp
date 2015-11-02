@@ -20,8 +20,7 @@ void ofApp::setupImages()
     img02x = testJPGImage.width;
     img02y = 0;
     
-    // Starts with no selected image;
-    pSelectedImage = NULL;
+
 }
 
 
@@ -66,7 +65,7 @@ void ofApp::draw()
 
 void ofApp::drawWebcam()
 {
-    webcam.draw(0, 0);
+    webcam.draw(mouseX, mouseY);
 }
 
 void ofApp::drawImages()
@@ -74,10 +73,7 @@ void ofApp::drawImages()
     testJPGImage.draw(img01x,img01y);
     testPNGImage.draw(img02x, img02y);
     
-    if(pSelectedImage != NULL)
-    {
-        pSelectedImage->draw(mouseX, mouseY);
-    }
+   
 }
 
 void ofApp::drawShaders()
@@ -118,7 +114,6 @@ void ofApp::mousePressed(int x, int y, int button)
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
 
-    pSelectedImage = &testPNGImage;
 }
 
 //--------------------------------------------------------------

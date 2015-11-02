@@ -12,7 +12,7 @@ private:
     ofImage testPNGImage;
     int img02x, img02y;
 
-    ofImage* pSelectedImage;
+
 
     void setupImages();
     void drawImages();
