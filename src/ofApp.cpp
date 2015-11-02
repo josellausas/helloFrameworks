@@ -3,6 +3,13 @@
 //--------------------------------------------------------------
 void ofApp::setup()
 {
+    
+    setupImages();
+    setupShaders();
+}
+
+void ofApp::setupImages()
+{
     // Loads an image
     // Este archivo debe de estar adentro de el folder ./bin/data
     testJPGImage.loadImage("image.jpg");
@@ -15,6 +22,24 @@ void ofApp::setup()
     
     // Starts with no selected image;
     pSelectedImage = NULL;
+}
+
+
+/**
+ *  Sets up them shaders
+ */
+void ofApp::setupShaders()
+{
+    if(ofIsGLProgrammableRenderer())
+    {
+        shader.load("shaders/testShader");
+    }
+    else
+    {
+        // Not able lo load OpenGL3 shader!!!!
+        std::cout << "Not able lo load OpenGL3 shader!!!!" << std::endl;
+        shader.load("shaders/testShader");
+    }
     
 }
 
@@ -27,6 +52,13 @@ void ofApp::update()
 //--------------------------------------------------------------
 void ofApp::draw()
 {
+
+    drawShaders();
+    drawImages();
+}
+
+void ofApp::drawImages()
+{
     testJPGImage.draw(img01x,img01y);
     testPNGImage.draw(img02x, img02y);
     
@@ -34,6 +66,13 @@ void ofApp::draw()
     {
         pSelectedImage->draw(mouseX, mouseY);
     }
+}
+
+void ofApp::drawShaders()
+{
+    shader.begin();
+        ofRect(0,0, ofGetWidth(), ofGetHeight());
+    shader.end();
     
 }
 

@@ -5,14 +5,23 @@
 class ofApp : public ofBaseApp
 {
     private:
+        // Images
         ofImage testJPGImage;
         int img01x, img01y;
-    
+
         ofImage testPNGImage;
         int img02x, img02y;
     
-    
         ofImage* pSelectedImage;
+    
+        void setupImages();
+        void drawImages();
+    
+    
+        // Shaders
+        ofShader shader;
+        void setupShaders();
+        void drawShaders();
     
     
     
