@@ -19,8 +19,6 @@ void ofApp::setupImages()
     testPNGImage.loadImage("image.png");
     img02x = testJPGImage.width;
     img02y = 0;
-    
-
 }
 
 
@@ -79,7 +77,7 @@ void ofApp::drawImages()
 void ofApp::drawShaders()
 {
     shader.begin();
-        ofRect(0,0, ofGetWidth(), ofGetHeight());
+    ofRect(0,0, ofGetWidth(), ofGetHeight());
     shader.end();
     
 }
