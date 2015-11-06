@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxMacamPs3Eye.h"
 
 class ofApp : public ofBaseApp
 {
@@ -27,6 +28,15 @@ private:
     ofVideoGrabber webcam;
     void setupWebcam();
     void drawWebcam();
+    
+    // PS3 Cam
+    ofxMacamPs3Eye ps3eye;
+    int camWidth;
+    int camHeight;
+    void setupPs3Cam();
+    void drawPs3Cam();
+    void updatePs3Cam();
+    
     
     
     

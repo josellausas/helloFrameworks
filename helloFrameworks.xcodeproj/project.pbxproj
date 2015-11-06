@@ -26,6 +26,25 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		EEE9955D1BED3AA800625C4C /* AGC.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE995391BED3AA700625C4C /* AGC.mm */; };
+		EEE9955E1BED3AA800625C4C /* BayerConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE9953A1BED3AA700625C4C /* BayerConverter.mm */; };
+		EEE9955F1BED3AA800625C4C /* ControllerInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE9953B1BED3AA700625C4C /* ControllerInterface.mm */; };
+		EEE995601BED3AA800625C4C /* FrameCounter.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE9953C1BED3AA700625C4C /* FrameCounter.mm */; };
+		EEE995611BED3AA800625C4C /* GenericDriver.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE9953D1BED3AA700625C4C /* GenericDriver.mm */; };
+		EEE995621BED3AA800625C4C /* Histogram.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE9953E1BED3AA700625C4C /* Histogram.mm */; };
+		EEE995631BED3AA800625C4C /* LookUpTable.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE995501BED3AA700625C4C /* LookUpTable.mm */; };
+		EEE995641BED3AA800625C4C /* MiniGraphicsTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEE995511BED3AA700625C4C /* MiniGraphicsTools.cpp */; };
+		EEE995651BED3AA800625C4C /* MiscTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEE995521BED3AA700625C4C /* MiscTools.cpp */; };
+		EEE995661BED3AA800625C4C /* MyCameraCentral.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE995531BED3AA700625C4C /* MyCameraCentral.mm */; };
+		EEE995671BED3AA800625C4C /* MyCameraDriver.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE995541BED3AA700625C4C /* MyCameraDriver.mm */; };
+		EEE995681BED3AA800625C4C /* MyCameraInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE995551BED3AA800625C4C /* MyCameraInfo.mm */; };
+		EEE995691BED3AA800625C4C /* OV534Driver.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE995561BED3AA800625C4C /* OV534Driver.mm */; };
+		EEE9956A1BED3AA800625C4C /* Resolvers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEE995571BED3AA800625C4C /* Resolvers.cpp */; };
+		EEE9956B1BED3AA800625C4C /* Sensor.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE995581BED3AA800625C4C /* Sensor.mm */; };
+		EEE9956C1BED3AA800625C4C /* ofxMacamPs3Eye.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE9955A1BED3AA800625C4C /* ofxMacamPs3Eye.mm */; };
+		EEE9956D1BED3AA800625C4C /* PS3EyeWindowAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = EEE9955C1BED3AA800625C4C /* PS3EyeWindowAppDelegate.mm */; };
+		EEE995701BED3B6800625C4C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE9956E1BED3B6800625C4C /* Quartz.framework */; };
+		EEE995711BED3B6800625C4C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE9956F1BED3B6800625C4C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +103,43 @@
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
 		EEB4C2B11BE7BEE50066B668 /* testShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = testShader.frag; path = ../bin/data/shaders/testShader.frag; sourceTree = "<group>"; };
 		EEB4C2B21BE7BEE50066B668 /* testShader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = testShader.vert; path = ../bin/data/shaders/testShader.vert; sourceTree = "<group>"; };
+		EEE995391BED3AA700625C4C /* AGC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AGC.mm; sourceTree = "<group>"; };
+		EEE9953A1BED3AA700625C4C /* BayerConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BayerConverter.mm; sourceTree = "<group>"; };
+		EEE9953B1BED3AA700625C4C /* ControllerInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ControllerInterface.mm; sourceTree = "<group>"; };
+		EEE9953C1BED3AA700625C4C /* FrameCounter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FrameCounter.mm; sourceTree = "<group>"; };
+		EEE9953D1BED3AA700625C4C /* GenericDriver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GenericDriver.mm; sourceTree = "<group>"; };
+		EEE9953E1BED3AA700625C4C /* Histogram.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Histogram.mm; sourceTree = "<group>"; };
+		EEE995401BED3AA700625C4C /* AGC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGC.h; sourceTree = "<group>"; };
+		EEE995411BED3AA700625C4C /* BayerConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BayerConverter.h; sourceTree = "<group>"; };
+		EEE995421BED3AA700625C4C /* ControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerInterface.h; sourceTree = "<group>"; };
+		EEE995431BED3AA700625C4C /* FrameCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameCounter.h; sourceTree = "<group>"; };
+		EEE995441BED3AA700625C4C /* GenericDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericDriver.h; sourceTree = "<group>"; };
+		EEE995451BED3AA700625C4C /* GlobalDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefs.h; sourceTree = "<group>"; };
+		EEE995461BED3AA700625C4C /* Histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Histogram.h; sourceTree = "<group>"; };
+		EEE995471BED3AA700625C4C /* LookUpTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookUpTable.h; sourceTree = "<group>"; };
+		EEE995481BED3AA700625C4C /* MiniGraphicsTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniGraphicsTools.h; sourceTree = "<group>"; };
+		EEE995491BED3AA700625C4C /* MiscTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscTools.h; sourceTree = "<group>"; };
+		EEE9954A1BED3AA700625C4C /* MyCameraCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCameraCentral.h; sourceTree = "<group>"; };
+		EEE9954B1BED3AA700625C4C /* MyCameraDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCameraDriver.h; sourceTree = "<group>"; };
+		EEE9954C1BED3AA700625C4C /* MyCameraInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCameraInfo.h; sourceTree = "<group>"; };
+		EEE9954D1BED3AA700625C4C /* OV534Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OV534Driver.h; sourceTree = "<group>"; };
+		EEE9954E1BED3AA700625C4C /* Resolvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resolvers.h; sourceTree = "<group>"; };
+		EEE9954F1BED3AA700625C4C /* Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensor.h; sourceTree = "<group>"; };
+		EEE995501BED3AA700625C4C /* LookUpTable.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LookUpTable.mm; sourceTree = "<group>"; };
+		EEE995511BED3AA700625C4C /* MiniGraphicsTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MiniGraphicsTools.cpp; sourceTree = "<group>"; };
+		EEE995521BED3AA700625C4C /* MiscTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MiscTools.cpp; sourceTree = "<group>"; };
+		EEE995531BED3AA700625C4C /* MyCameraCentral.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCameraCentral.mm; sourceTree = "<group>"; };
+		EEE995541BED3AA700625C4C /* MyCameraDriver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCameraDriver.mm; sourceTree = "<group>"; };
+		EEE995551BED3AA800625C4C /* MyCameraInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCameraInfo.mm; sourceTree = "<group>"; };
+		EEE995561BED3AA800625C4C /* OV534Driver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OV534Driver.mm; sourceTree = "<group>"; };
+		EEE995571BED3AA800625C4C /* Resolvers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Resolvers.cpp; sourceTree = "<group>"; };
+		EEE995581BED3AA800625C4C /* Sensor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Sensor.mm; sourceTree = "<group>"; };
+		EEE995591BED3AA800625C4C /* ofxMacamPs3Eye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMacamPs3Eye.h; sourceTree = "<group>"; };
+		EEE9955A1BED3AA800625C4C /* ofxMacamPs3Eye.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxMacamPs3Eye.mm; sourceTree = "<group>"; };
+		EEE9955B1BED3AA800625C4C /* PS3EyeWindowAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PS3EyeWindowAppDelegate.h; sourceTree = "<group>"; };
+		EEE9955C1BED3AA800625C4C /* PS3EyeWindowAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PS3EyeWindowAppDelegate.mm; sourceTree = "<group>"; };
+		EEE9956E1BED3B6800625C4C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		EEE9956F1BED3B6800625C4C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +147,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE995701BED3B6800625C4C /* Quartz.framework in Frameworks */,
+				EEE995711BED3B6800625C4C /* QuartzCore.framework in Frameworks */,
 				E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */,
 				E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */,
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
@@ -169,6 +227,8 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				EEE9956E1BED3B6800625C4C /* Quartz.framework */,
+				EEE9956F1BED3B6800625C4C /* QuartzCore.framework */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -182,6 +242,11 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EEE995381BED3AA700625C4C /* macam */,
+				EEE995591BED3AA800625C4C /* ofxMacamPs3Eye.h */,
+				EEE9955A1BED3AA800625C4C /* ofxMacamPs3Eye.mm */,
+				EEE9955B1BED3AA800625C4C /* PS3EyeWindowAppDelegate.h */,
+				EEE9955C1BED3AA800625C4C /* PS3EyeWindowAppDelegate.mm */,
 				EEB4C2B11BE7BEE50066B668 /* testShader.frag */,
 				EEB4C2B21BE7BEE50066B668 /* testShader.vert */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
@@ -198,6 +263,52 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		EEE995381BED3AA700625C4C /* macam */ = {
+			isa = PBXGroup;
+			children = (
+				EEE995391BED3AA700625C4C /* AGC.mm */,
+				EEE9953A1BED3AA700625C4C /* BayerConverter.mm */,
+				EEE9953B1BED3AA700625C4C /* ControllerInterface.mm */,
+				EEE9953C1BED3AA700625C4C /* FrameCounter.mm */,
+				EEE9953D1BED3AA700625C4C /* GenericDriver.mm */,
+				EEE9953E1BED3AA700625C4C /* Histogram.mm */,
+				EEE9953F1BED3AA700625C4C /* include */,
+				EEE995501BED3AA700625C4C /* LookUpTable.mm */,
+				EEE995511BED3AA700625C4C /* MiniGraphicsTools.cpp */,
+				EEE995521BED3AA700625C4C /* MiscTools.cpp */,
+				EEE995531BED3AA700625C4C /* MyCameraCentral.mm */,
+				EEE995541BED3AA700625C4C /* MyCameraDriver.mm */,
+				EEE995551BED3AA800625C4C /* MyCameraInfo.mm */,
+				EEE995561BED3AA800625C4C /* OV534Driver.mm */,
+				EEE995571BED3AA800625C4C /* Resolvers.cpp */,
+				EEE995581BED3AA800625C4C /* Sensor.mm */,
+			);
+			path = macam;
+			sourceTree = "<group>";
+		};
+		EEE9953F1BED3AA700625C4C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EEE995401BED3AA700625C4C /* AGC.h */,
+				EEE995411BED3AA700625C4C /* BayerConverter.h */,
+				EEE995421BED3AA700625C4C /* ControllerInterface.h */,
+				EEE995431BED3AA700625C4C /* FrameCounter.h */,
+				EEE995441BED3AA700625C4C /* GenericDriver.h */,
+				EEE995451BED3AA700625C4C /* GlobalDefs.h */,
+				EEE995461BED3AA700625C4C /* Histogram.h */,
+				EEE995471BED3AA700625C4C /* LookUpTable.h */,
+				EEE995481BED3AA700625C4C /* MiniGraphicsTools.h */,
+				EEE995491BED3AA700625C4C /* MiscTools.h */,
+				EEE9954A1BED3AA700625C4C /* MyCameraCentral.h */,
+				EEE9954B1BED3AA700625C4C /* MyCameraDriver.h */,
+				EEE9954C1BED3AA700625C4C /* MyCameraInfo.h */,
+				EEE9954D1BED3AA700625C4C /* OV534Driver.h */,
+				EEE9954E1BED3AA700625C4C /* Resolvers.h */,
+				EEE9954F1BED3AA700625C4C /* Sensor.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +398,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE995631BED3AA800625C4C /* LookUpTable.mm in Sources */,
+				EEE995601BED3AA800625C4C /* FrameCounter.mm in Sources */,
+				EEE9956C1BED3AA800625C4C /* ofxMacamPs3Eye.mm in Sources */,
+				EEE995661BED3AA800625C4C /* MyCameraCentral.mm in Sources */,
+				EEE9956A1BED3AA800625C4C /* Resolvers.cpp in Sources */,
+				EEE9955E1BED3AA800625C4C /* BayerConverter.mm in Sources */,
+				EEE995621BED3AA800625C4C /* Histogram.mm in Sources */,
+				EEE9955D1BED3AA800625C4C /* AGC.mm in Sources */,
+				EEE995651BED3AA800625C4C /* MiscTools.cpp in Sources */,
+				EEE9956B1BED3AA800625C4C /* Sensor.mm in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				EEE995691BED3AA800625C4C /* OV534Driver.mm in Sources */,
+				EEE995671BED3AA800625C4C /* MyCameraDriver.mm in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				EEE995641BED3AA800625C4C /* MiniGraphicsTools.cpp in Sources */,
+				EEE9956D1BED3AA800625C4C /* PS3EyeWindowAppDelegate.mm in Sources */,
+				EEE9955F1BED3AA800625C4C /* ControllerInterface.mm in Sources */,
+				EEE995681BED3AA800625C4C /* MyCameraInfo.mm in Sources */,
+				EEE995611BED3AA800625C4C /* GenericDriver.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

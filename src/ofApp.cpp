@@ -6,6 +6,7 @@ void ofApp::setup()
     setupImages();
     setupShaders();
     setupWebcam();
+    setupPs3Cam();
 }
 
 void ofApp::setupImages()
@@ -50,6 +51,7 @@ void ofApp::setupWebcam()
 void ofApp::update()
 {
     webcam.update();
+    updatePs3Cam();
 }
 
 //--------------------------------------------------------------
@@ -59,6 +61,7 @@ void ofApp::draw()
     drawShaders();
     drawImages();
     drawWebcam();
+    drawPs3Cam();
 }
 
 void ofApp::drawWebcam()
@@ -128,3 +131,47 @@ void ofApp::gotMessage(ofMessage msg){
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
+
+void ofApp::setupPs3Cam()
+{
+    camWidth = 640;
+    camHeight = 480;
+    
+    ps3eye.listDevices();
+    
+    ps3eye.setDesiredFrameRate(60);
+    ps3eye.initGrabber(camWidth,camHeight);
+    
+    ps3eye.setAutoGainAndShutter(false); // otherwise we can't set gain or shutter
+    ps3eye.setGain(1.0);
+    ps3eye.setShutter(1.0);
+    ps3eye.setGamma(0.4);
+    ps3eye.setBrightness(0.6);
+    ps3eye.setContrast(1.0);
+    ps3eye.setHue(0.5);
+    
+    ps3eye.setFlicker(1);
+    
+}
+
+
+void ofApp::drawPs3Cam()
+{
+    ps3eye.draw(20,20);
+    
+    ofDrawBitmapString("Ps3Eye FPS: "+ ofToString(ps3eye.getRealFrameRate()), 20,15);
+}
+
+
+void ofApp::updatePs3Cam()
+{
+    ps3eye.update();
+    
+    // Blink the led everytime there is a new frame
+//    if(ps3eye.isFrameNew()){
+//        ps3eye.setLed(true);
+//    }
+//    else ps3eye.setLed(false);
+}
+
+
